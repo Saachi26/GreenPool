@@ -1,0 +1,65 @@
+.Rectangle {
+  /* Rectangle */
+  background: url("../../../public/image.png");
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.e1 {
+  /* Ellipse 1 */
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 0;
+  right: 1212px;
+  top: 0;
+  bottom: 40%;
+  background: rgba(49, 129, 98, 0.5);
+  filter: blur(100px);
+}
+.e2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 664px;
+  right: 548px;
+  top: 266px;
+  bottom: 416px;
+  filter: blur(100px);
+  background: rgba(49, 129, 98, 0.5);
+}
+.e3 {
+  /* Ellipse 3 */
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 185px;
+  right: 1027px;
+  top: 491px;
+  bottom: 191px;
+  filter: blur(200px);
+  background: rgba(249, 183, 93, 0.5);
+}
+.e4 {
+  /* Ellipse 4 */
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 1200px;
+  right: 12px;
+  top: 416px;
+  bottom: 266px;
+  filter: blur(200px);
+  background: rgba(249, 183, 93, 0.5);
+}
+.e5 {
+  /* leaf-plant-leaves-flower-png-favpng-W8nipqsTkcKgwxFNfHWAp4ByA-removebg-preview 2 */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 336.8px;
+  bottom: 193.2px;
+  transform: rotate(-20deg);
+  background: url("../../../public/leaf-plant-leaves-flower-png-favpng-W8nipqsTkcKgwxFNfHWAp4ByA-removebg-preview\ 2.png");
+}

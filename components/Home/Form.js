@@ -4,10 +4,13 @@ import InputItem from "./Input";
 import { PickupContext } from "../../context/PickupContext";
 import { DestinationContext } from "../../context/DestinationContext";
 import Rides from "./Rides";
+import "./Form.css";
+
 function Form() {
   const { Pickup, setPickup } = useContext(PickupContext);
   const { destination, setDestination } = useContext(DestinationContext);
   const [distance, setDistance] = useState();
+  console.log(distance);
   const calculateDistance = () => {
     console.log();
     const dist = google.maps.geometry.spherical.computeDistanceBetween(
@@ -20,17 +23,12 @@ function Form() {
   };
   return (
     <div>
-      <div
-        className="p-2 md:p-6 
-    border-[2px] rounded-xl"
-      >
-        <p className="text-[20px] font-bold">Get a ride</p>
+      <div className=" left-4 z-1 absolute top-[15%] w-[30%] p-6 md:pd-6 rounded-3xl border-[0.5px] shadow-lg bg-inherit backdrop-blur-lg form">
         <InputItem type="Pickup" />
         <InputItem type="destination" />
 
         <button
-          className=" p-4 bg-black w-full mt-5 
-        text-white rounded-lg"
+          className="p-3 bg-green-800 w-full text-white text-xl font-bold mt-5 rounded-lg"
           onClick={() => calculateDistance()}
         >
           Search

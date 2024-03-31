@@ -11,7 +11,7 @@ import {
 import "./Header.css";
 function Header() {
   return (
-    <div className="nav">
+    <div className=" nav">
       <div justify="start">
         <p className="font-extrabold text-5xl text-Logo cursor-pointer logo">
           GreenPool

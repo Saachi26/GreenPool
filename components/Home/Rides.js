@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Rides = () => {
+const Rides = ({ distance }) => {
   return (
     <>
       <h1 className="text-green-800 xl:text-4xl lg:text-4xl md:text-2xl sm:text-xl font-bold mt-5">

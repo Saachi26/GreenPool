@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 import "./page.css";
 const Homepage = () => {
   const WhiteBox = ({ text }) => {
@@ -37,7 +37,9 @@ const Homepage = () => {
             commute every day
           </p>
           <div className="but text-center">
-            <span className="buttext">Get Started</span>
+            <Link className="buttext" href="/users/bookride">
+              Get Started
+            </Link>
           </div>
         </div>
       </div>

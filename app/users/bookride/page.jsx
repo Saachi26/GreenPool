@@ -6,20 +6,19 @@ import { DestinationContext } from "../../../context/DestinationContext";
 import { PickupContext } from "../../../context/PickupContext";
 import { LoadScript } from "@react-google-maps/api";
 
-// Define the libraries array outside the component
 const libraries = ["places"];
 
 const Home = () => {
   const [Pickup, setPickup] = useState([]);
-  const [Destination, setDestination] = useState([]);
+  const [destination, setDestination] = useState([]);
   return (
     <PickupContext.Provider value={{ Pickup, setPickup }}>
-      <DestinationContext.Provider value={{ Destination, setDestination }}>
+      <DestinationContext.Provider value={{ destination, setDestination }}>
         <LoadScript
           libraries={libraries}
-          googleMapsApiKey={"AIzaSyAQl4SuaTbYMFFOzi98VsYO45K-3qlYjJw"}
+          googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY}
         >
-          <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-5 mt-36">
             <div>
               <Form />
             </div>

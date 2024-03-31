@@ -15,7 +15,7 @@ GreenPool is a carpooling startup dedicated to saving the environment by promoti
 
 ## Support
 
-For any inquiries or assistance, feel free to reach out to our support team at support@greenpool.com.
+For any inquiries or assistance, feel free to reach out to our support team at saachibadal@gmail.com & goswamimadhavkrishan@gmail.com.
 
 ## Contributing
 
